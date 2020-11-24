@@ -1,10 +1,4 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-console.log('object');
+import App from './App.jsx';
 
-const link = React.createElement('a', {
-  href: 'https://reactjs.org/',
-},'estgtrbgrybtdyb'
-)
-ReactDOM.render(link,document.querySelector('#root'))
-console.log(link);
+ReactDOM.render(<App />, document.querySelector('#root'));
