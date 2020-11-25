@@ -1,4 +1,4 @@
-export default function FriendList({friends}) {
+export default function FriendList({ friends }) {
     return (friends.map(obj => {
         return (<li class="item" key={obj.id}>
             <span class="status" data-status={obj.isOnline}></span>

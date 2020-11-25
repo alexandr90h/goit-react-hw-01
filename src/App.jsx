@@ -1,8 +1,11 @@
 import Profile from './components/profile';
 import Statistical from './components/statistical';
+import FriendList from './components/friendList';
+import TransactionHistory from './components/transactionHistory';
 import user from './user.json';
 import statisticalData from './statistical-data.json';
 import friends from './friends.json';
+import transactions from './transactions.json';
 
 export function Prof() {
     return (<Profile
@@ -18,6 +21,9 @@ export function Prof() {
 export function Stats() {
     return (<Statistical stats={statisticalData} />);
 }
-export function FriendList() {
+export function Friends() {
     return (<FriendList friends={friends} />);
+}
+export function Transaction () {
+    return (<TransactionHistory items={transactions} />)
 }

@@ -1,28 +1,30 @@
-export default function Profile({name,tag,location,avatar,followers,views,likes}) {
-    return (<div class="profile">
-        <div class="description">
+import styles from './profile.module.css';
+
+export default function Profile({ name, tag, location, avatar, followers, views, likes }) {
+    return (<div className={styles.profile}>
+        <div className={styles.description}>
             <img
                 src={avatar}
                 alt="Аватар пользователя"
-                class="avatar"
+                className={styles.avatar}
             />
-            <p class="name">{name}</p>
-            <p class="tag">{tag}</p>
-            <p class="location">{location}</p>
+            <p className={styles.name}>{name}</p>
+            <p className={styles.tag}>@{tag}</p>
+            <p className={styles.location}>{location}</p>
         </div>
 
-        <ul class="stats">
+        <ul className={styles.stats}>
             <li>
-                <span class="label">Followers</span>
-                <span class="quantity">{followers}</span>
+                <span className={styles.label}>Followers</span>
+                <span className={styles.quantity}>{followers}</span>
             </li>
             <li>
-                <span class="label">Views</span>
-                <span class="quantity">{views}</span>
+                <span className={styles.label}>Views</span>
+                <span className={styles.quantity}>{views}</span>
             </li>
             <li>
-                <span class="label">Likes</span>
-                <span class="quantity">{likes}</span>
+                <span className={styles.label}>Likes</span>
+                <span className={styles.quantity}>{likes}</span>
             </li>
         </ul>
     </div>);
