@@ -1,4 +1,8 @@
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
+import { Prof, Stats, FriendList } from './App.jsx';
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+const ROOT = document.querySelector('#root');
+
+ReactDOM.render(<Prof />, ROOT);
+ReactDOM.render(<Stats />, ROOT);
+ReactDOM.render(<FriendList />, ROOT);

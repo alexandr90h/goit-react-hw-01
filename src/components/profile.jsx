@@ -6,9 +6,9 @@ export default function Profile({name,tag,location,avatar,followers,views,likes}
                 alt="Аватар пользователя"
                 class="avatar"
             />
-            <p class={name}>Petra Marica</p>
-            <p class={tag}>@pmarica</p>
-            <p class={location}>Salvador, Brasil</p>
+            <p class="name">{name}</p>
+            <p class="tag">{tag}</p>
+            <p class="location">{location}</p>
         </div>
 
         <ul class="stats">
