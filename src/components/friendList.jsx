@@ -1,10 +1,14 @@
+import styles from './friendList.module.css';
 export default function FriendList({ friends }) {
-    return (friends.map(obj => {
-        return (<li class="item" key={obj.id}>
-            <span class="status" data-status={obj.isOnline}></span>
-            <img class="avatar" src={obj.avatar} alt="" width="48" />
-            <p class="name">{obj.name}</p>
+    return (<ul className={styles.friendList}>
+        {(friends.map(obj => {
+        return (
+        <li className={styles.item} key={obj.id}>
+            <span className={styles.status} data-status={obj.isOnline}></span>
+                <img className={styles.avatar} src={obj.avatar} alt="" width="48" />
+                <p className={styles.name}>{obj.name}</p>
         </li>);
     })
-        );
+        )}
+</ul>)
 }

@@ -55,13 +55,13 @@ p {
   padding-bottom: 10px;
   background-color: rgb(236, 236, 236);
 }
-li:first-child {
+.stats li:first-child {
   border-bottom-left-radius: 5px;
 }
-li:last-child {
+.stats li:last-child {
   border-bottom-right-radius: 5px;
 }
-li:not(:last-child) {
+.stats li:not(:last-child) {
   border-right: 1px solid #8d8d8d;
 }
 
