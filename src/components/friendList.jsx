@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import styles from './friendList.module.css';
+
 export default function FriendList({ friends }) {
     return (<ul className={styles.friendList}>
         {(friends.map(obj => {
@@ -11,4 +13,9 @@ export default function FriendList({ friends }) {
     })
         )}
 </ul>)
+}
+FriendList.propTypes = {
+    id: PropTypes.number,
+    isOnline: PropTypes.bool,
+    avatar:PropTypes.number,
 }

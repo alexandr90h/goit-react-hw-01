@@ -32,20 +32,20 @@
   color: white;
 }
 .item:nth-child(1) {
-  background-color: rgb(212, 75, 75);
+  background-color: #e231c5;
   border-bottom-left-radius: 5px;
 }
 .item:nth-child(2) {
-  background-color: rgb(75, 212, 121);
+  background-color: #e2316c;
 }
 .item:nth-child(3) {
-  background-color: rgb(75, 118, 212);
+  background-color: #e24e31;
 }
 .item:nth-child(4) {
-  background-color: rgb(210, 212, 75);
+  background-color: #e2a631;
 }
 .item:nth-child(5) {
-  background-color: rgb(212, 75, 182);
+  background-color: #c5e231;
   border-bottom-right-radius: 5px;
 }
 .label {
