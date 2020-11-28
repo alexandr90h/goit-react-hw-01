@@ -1,4 +1,5 @@
 import styles from './transactionHistory.module.scss';
+import TransactionItem from './transactionItem';
 export default function TransactionHistory({ items }) {
     return (
         <table className={styles.transactionHistory}>
@@ -11,12 +12,12 @@ export default function TransactionHistory({ items }) {
             </thead>
             <tbody>
                 {items.map(obj => {
-                    return (
-                        <tr key={obj.id}>
-                            <td>{obj.type}</td>
-                            <td>{obj.amount}</td>
-                            <td>{obj.currency}</td>
-                        </tr>
+                    return (<TransactionItem key={obj.id}
+                        id={obj.id}
+                        type={obj.type}
+                        amount={obj.amount}
+                        currency={obj.currency}
+                    />
                     );
                 })}
             </tbody>

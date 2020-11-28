@@ -1,11 +1,11 @@
-import Profile from './components/profile';
-import Statistical from './components/statistical';
-import FriendList from './components/friendList';
-import TransactionHistory from './components/transactionHistory';
-import user from './user.json';
-import statisticalData from './statistical-data.json';
-import friends from './friends.json';
-import transactions from './transactions.json';
+import Profile from './components/profile/profile';
+import Statistical from './components/statistical/statistical';
+import FriendList from './components/friendList/friendList';
+import TransactionHistory from './components/transactionHistory/transactionHistory';
+import user from './components/profile/user.json';
+import statisticalData from './components/statistical/statistical-data.json';
+import friends from './components/friendList/friends.json';
+import transactions from './components/transactionHistory/transactions.json';
 
 export function Prof() {
     return (<Profile
